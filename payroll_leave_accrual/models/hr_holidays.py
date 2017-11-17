@@ -18,7 +18,7 @@
 #
 ##############################################################################
 
-from openerp import api, fields, models, _
+from odoo import api, fields, models, _
 
 
 class HrHolidays(models.Model):
@@ -32,12 +32,18 @@ class HrHolidays(models.Model):
     )
 
     @api.multi
-    def holidays_validate(self):
+    def action_validate(self):
+        
+        print "something"
+        
+        """holiday_validate function changed to action_validate
         """
-        After an allocation of holidays is validated,
+        
+        
+        """After an allocation of holidays is validated,
         add hours to the related leave accrual of the employee
         """
-        res = super(HrHolidays, self).holidays_validate()
+        res = super(HrHolidays, self).action_validate()
 
         self = self.with_context({'disable_leave_accrual_update': True})
         self.sudo().cancel_leave_accrual_lines()
@@ -54,10 +60,12 @@ class HrHolidays(models.Model):
 
     @api.one
     def compute_leave_accrual_lines(self):
+        
         if (
             self.type == 'add' and self.holiday_type == 'employee' and
             self.holiday_status_id.increase_accrual_on_allocation
         ):
+            print "seomthing if condition"
             employee = self.employee_id
             leave_type = self.holiday_status_id
 
