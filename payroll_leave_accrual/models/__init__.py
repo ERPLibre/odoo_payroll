@@ -18,14 +18,14 @@
 #
 ##############################################################################
 
-from . import hr_leave_accrual
-from . import hr_leave_accrual_line
-from . import hr_leave_accrual_line_hours
-from . import hr_leave_accrual_line_cash
-from . import hr_holidays
-from . import hr_holidays_status
-from . import hr_holidays_status_accrual_line
-from . import hr_payslip
-from . import hr_employee
-from . import hr_salary_rule
-from . import res_company
+import hr_leave_accrual
+import hr_leave_accrual_line
+import hr_leave_accrual_line_hours
+import hr_leave_accrual_line_cash
+import hr_holidays
+import hr_holidays_status
+import hr_holidays_status_accrual_line
+import hr_payslip
+import hr_employee
+import hr_salary_rule
+import res_company

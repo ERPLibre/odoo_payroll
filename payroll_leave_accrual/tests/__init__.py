@@ -18,6 +18,6 @@
 #
 ##############################################################################
 
-from . import test_hr_payslip
-from . import test_hr_holidays_status
-from . import test_hr_leave_accrual
+import test_hr_payslip
+import test_hr_holidays_status
+import test_hr_leave_accrual
