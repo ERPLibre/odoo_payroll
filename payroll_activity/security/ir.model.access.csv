@@ -1,3 +1,7 @@
-"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
-"access_hr_activity","hr.activity","model_hr_activity",base.group_user,1,0,0,0
-"access_hr_activity","hr.activity","model_hr_activity",payroll_base.group_hr_payroll_manager,1,1,1,1
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_activity,hr.activity,model_hr_activity,base.group_user,1,0,0,0
+access_hr_activity,hr.activity,model_hr_activity,payroll_base.group_hr_payroll_manager,1,1,1,1
+,,,,,,,
+access_hr_holidays_status_user,access_hr_holidays_status,model_hr_holidays_status,vitalpet_mypractice.group_my_practice_user,1,0,0,0
+access_hr_holidays_status_officer,access_hr_holidays_status,model_hr_holidays_status,vitalpet_mypractice.group_my_practice_officer,1,1,1,0
+access_hr_holidays_status_manager,access_hr_holidays_status,model_hr_holidays_status,vitalpet_mypractice.group_my_practice_manager,1,1,1,0
