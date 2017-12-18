@@ -31,9 +31,12 @@ class HrContract(models.Model):
         :return: The hourly rate computed from the wage of an employee.
         """
         for contract in self:
-            contract.hourly_rate_from_wage = contract.wage / (
-                contract.pays_per_year * contract.worked_hours_per_pay_period
-            )
+            if contract.pays_per_year>0 and contract.worked_hours_per_pay_period>0:
+                contract.hourly_rate_from_wage = contract.wage / (
+                    contract.pays_per_year * contract.worked_hours_per_pay_period
+                )
+            else:
+                contract.hourly_rate_from_wage=0
 
     weeks_of_vacation = fields.Float(
         'Number of weeks of vacation',
