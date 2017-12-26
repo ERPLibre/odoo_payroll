@@ -28,7 +28,8 @@
               'Odoo Community Association (OCA)',
     'website': 'https://www.savoirfairelinux.com/',
     'depends': [
-        'hr_contract'
+        'hr_contract',
+        'payroll_base'
     ],
     'data': [
         'security/ir.model.access.csv',

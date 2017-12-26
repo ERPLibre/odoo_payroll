@@ -26,7 +26,7 @@
     'author': "Savoir-faire Linux",
     'website': 'https://www.savoirfairelinux.com',
     'depends': [
-        'payroll_base',
+        'base','payroll_base',
     ],
     'data': [
         'security/ir.model.access.csv',

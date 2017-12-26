@@ -28,7 +28,7 @@
               'Odoo Community Association (OCA)',
     'website': 'https://www.savoirfairelinux.com/',
     'depends': [
-        'payroll_contract_jobs',
+        'base','payroll_contract_jobs',
     ],
     'data': [
         'security/ir.model.access.csv',
