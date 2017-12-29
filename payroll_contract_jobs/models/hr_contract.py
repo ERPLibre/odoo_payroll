@@ -40,6 +40,7 @@ class HrContract(models.Model):
         'hr.contract.job',
         'contract_id',
         string='Jobs',
+        required=True
     )
 
     # Modify the job_id field so that it points to the main job

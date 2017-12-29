@@ -18,8 +18,8 @@
 #
 ##############################################################################
 
-from openerp import api, fields, models, _
-from openerp.exceptions import ValidationError
+from odoo import api, fields, models, _
+from odoo.exceptions import ValidationError
 from itertools import permutations
 from datetime import datetime
 strptime = datetime.strptime
@@ -98,11 +98,12 @@ class HrEmployeeBenefitRate(models.Model):
             ('each_pay', _('Each Pay')),
             ('annual', _('Annual')),
         ]
-
+    @api.multi
     def _get_amounts_now(self):
         today = context_today(self)
-        self.employee_amount = self.get_amount(today)
-        self.employer_amount = self.get_amount(today, employer=True)
+        for i in self:
+            i.employee_amount = i.get_amount(today)
+            i.employer_amount = i.get_amount(today, employer=True)
 
     @api.multi
     def get_amount(self, date, employer=False):

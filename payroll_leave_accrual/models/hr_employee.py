@@ -18,7 +18,7 @@
 #
 ##############################################################################
 
-from openerp import api, fields, models
+from odoo import api, fields, models
 
 
 class HrEmployee(models.Model):
@@ -43,7 +43,6 @@ class HrEmployee(models.Model):
         self.ensure_one()
 
         leave_type = self.env['hr.holidays.status'].browse(leave_type_id)
-
         existing_accrual = self.leave_accrual_ids.filtered(
             lambda a: a.leave_type_id == leave_type)
 

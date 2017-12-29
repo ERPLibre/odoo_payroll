@@ -18,14 +18,20 @@
 #
 ##############################################################################
 
-from odoo import fields, models
-
-
-class HrContract(models.Model):
-    _inherit = 'hr.contract'
-
-    benefit_line_ids = fields.One2many(
-        'hr.employee.benefit',
-        'contract_id',
-        'Employee Benefits',
-    )
+{
+    'name': 'Leave Entitlement',
+    'version': '8.0.0.1.0',
+    'license': 'AGPL-3',
+    'author': "Savoir-faire Linux",
+    'website': 'https://savoirfairelinux.com',
+    'depends': [
+        'payroll_leave_accrual',
+    ],
+    'data': [
+        'views/hr_holidays_entitlement.xml',
+        'views/hr_contract.xml',
+        'views/res_company.xml',
+        'security/ir.model.access.csv',
+    ],
+    'installable': True,
+}

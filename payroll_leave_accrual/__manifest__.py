@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 ##############################################################################
 #
-#    Copyright (C) 2016 Savoir-faire Linux. All Rights Reserved.
+#    Copyright (C) 2015 - 2015 Savoir-faire Linux. All Rights Reserved.
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published
@@ -19,18 +19,23 @@
 ##############################################################################
 
 {
-    'name': 'Leave Entitlement',
-    'version': '8.0.0.1.0',
+    'name': 'Leave Accruals',
+    'version': '1.0.0',
     'license': 'AGPL-3',
+    'category': 'Human Resources',
     'author': "Savoir-faire Linux",
-    'website': 'https://savoirfairelinux.com',
+    'website': 'https://www.savoirfairelinux.com/',
     'depends': [
-        'payroll_leave_accrual',
+        'payroll_base',
     ],
     'data': [
-        'views/hr_holidays_entitlement.xml',
-        'views/res_company.xml',
         'security/ir.model.access.csv',
+        'security/ir_rule.xml',
+        'views/hr_employee.xml',
+        'views/hr_leave_accrual.xml',
+        'views/hr_holidays_status.xml',
+        'views/hr_salary_rule.xml',
+        'views/res_company.xml',
     ],
     'installable': True,
 }
