@@ -1,4 +1,3 @@
-# coding: utf-8
 ##############################################################################
 #
 #    Copyright (C) 2016 Savoir-faire Linux. All Rights Reserved.
@@ -19,7 +18,7 @@
 #
 ##############################################################################
 
-from openerp import api, models, fields
+from odoo import api, models, fields
 
 
 class HrEmployee(models.Model):
