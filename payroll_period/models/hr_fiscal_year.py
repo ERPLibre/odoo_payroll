@@ -21,9 +21,9 @@
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-from openerp import models, fields, api, _
-from openerp.tools import DEFAULT_SERVER_DATE_FORMAT
-from openerp.exceptions import Warning as UserError
+from odoo import models, fields, api, _
+from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
+from odoo.exceptions import Warning as UserError
 
 strftime = datetime.strptime
 
