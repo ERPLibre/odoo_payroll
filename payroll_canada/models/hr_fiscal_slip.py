@@ -18,8 +18,8 @@
 #
 ##############################################################################
 
-from openerp import api, fields, models, _
-from openerp.exceptions import ValidationError
+from odoo import api, fields, models, _
+from odoo.exceptions import ValidationError
 
 
 def get_states(self):
@@ -64,7 +64,7 @@ class HrFiscalSlip(models.AbstractModel):
         get_states,
         'Status',
         type='char',
-        select=True,
+        index=True,
         required=True,
         default='draft',
     )

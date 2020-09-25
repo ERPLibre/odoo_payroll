@@ -21,9 +21,9 @@
 
 from datetime import datetime, date
 
-from openerp import api, fields, models, _
-from openerp.exceptions import ValidationError
-from openerp.tools import DEFAULT_SERVER_DATE_FORMAT
+from odoo import api, fields, models, _
+from odoo.exceptions import ValidationError
+from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
 
 to_string = fields.Date.to_string
 
