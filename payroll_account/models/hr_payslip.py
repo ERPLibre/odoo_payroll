@@ -23,9 +23,9 @@
 
 import time
 
-from openerp import _, api, fields, models
-from openerp.exceptions import ValidationError
-from openerp.tools import float_is_zero, float_compare
+from odoo import _, api, fields, models
+from odoo.exceptions import ValidationError
+from odoo.tools import float_is_zero, float_compare
 
 
 class HrPayslip(models.Model):
