@@ -21,8 +21,8 @@
 import datetime
 from dateutil.relativedelta import relativedelta
 
-from openerp import api, fields, models
-from openerp.exceptions import ValidationError
+from odoo import api, fields, models
+from odoo.exceptions import ValidationError
 
 from_string = fields.Date.from_string
 
