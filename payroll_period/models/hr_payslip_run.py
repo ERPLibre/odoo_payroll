@@ -18,8 +18,8 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api
-from openerp.exceptions import Warning as UserError
+from odoo import models, fields, api
+from odoo.exceptions import Warning as UserError
 
 from .hr_fiscal_year import get_schedules
 
