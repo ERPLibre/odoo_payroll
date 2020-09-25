@@ -18,9 +18,9 @@
 #
 ##############################################################################
 
-from openerp import api, fields, models, _
-from openerp.exceptions import ValidationError
-from openerp.tools.safe_eval import safe_eval as eval
+from odoo import api, fields, models, _
+from odoo.exceptions import ValidationError
+from odoo.tools.safe_eval import safe_eval as eval
 
 
 class HrSalaryRule(models.Model):
