@@ -20,7 +20,7 @@
 #
 ##############################################################################
 
-from openerp import fields, models, api, _
+from odoo import fields, models, api, _
 
 
 class HrContract(models.Model):
@@ -34,7 +34,7 @@ class HrContract(models.Model):
     schedule_pay = fields.Selection(
         lambda self: self.get_schedule_selection(),
         'Scheduled Pay',
-        select=True,
+        index=True,
         default='monthly',
     )
     pays_per_year = fields.Float(

@@ -23,7 +23,7 @@
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-from openerp import api, fields, models, _
+from odoo import api, fields, models, _
 
 
 class HrPayslipRun(models.Model):
@@ -54,7 +54,7 @@ class HrPayslipRun(models.Model):
             ('close', 'Close'),
         ],
         'Status',
-        select=True,
+        index=True,
         readonly=True,
         copy=False,
         default='draft',

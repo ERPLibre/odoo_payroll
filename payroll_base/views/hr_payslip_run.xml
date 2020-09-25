@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
-    <data>
+<odoo>
 
         <record id="hr_payslip_run_filter" model="ir.ui.view">
             <field name="name">hr.payslip.run.search</field>
@@ -75,6 +74,5 @@
         </record>
         <menuitem action="action_hr_payslip_run_tree" id="menu_hr_payslip_run" parent="menu_payroll_usage"/>
 
-    </data>
-</openerp>
+</odoo>
 
