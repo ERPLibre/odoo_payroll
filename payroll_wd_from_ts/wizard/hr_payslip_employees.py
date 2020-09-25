@@ -18,7 +18,7 @@
 #
 ##############################################################################
 
-from openerp import api, fields, models
+from odoo import api, fields, models
 
 
 class HrPayslipEmployees(models.TransientModel):
