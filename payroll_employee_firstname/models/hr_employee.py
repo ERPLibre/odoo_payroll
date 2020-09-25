@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Odoo, Open Source Management Solution
@@ -20,7 +19,7 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api
+from odoo import models, fields, api
 
 
 class HrEmployee(models.Model):
