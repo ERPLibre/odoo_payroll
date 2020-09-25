@@ -18,7 +18,7 @@
 #
 ##############################################################################
 
-from openerp.tests import common
+from odoo.tests import common
 from datetime import datetime
 
 

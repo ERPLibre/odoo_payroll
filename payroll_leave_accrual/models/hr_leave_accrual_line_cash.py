@@ -18,8 +18,8 @@
 #
 ##############################################################################
 
-from openerp import api, fields, models, _
-import openerp.addons.decimal_precision as dp
+from odoo import api, fields, models, _
+import odoo.addons.decimal_precision as dp
 
 
 class HrLeaveAccrualLineCash(models.Model):
