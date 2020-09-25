@@ -20,7 +20,7 @@
 
 from datetime import datetime, timedelta
 
-from openerp import api, fields, models
+from odoo import api, fields, models
 
 from_string = fields.Date.from_string
 to_string = fields.Date.to_string
