@@ -21,9 +21,9 @@
 #
 ##############################################################################
 
-from openerp import models, fields, api, _
+from odoo import models, fields, api, _
 from datetime import datetime
-from openerp.exceptions import ValidationError
+from odoo.exceptions import ValidationError
 
 
 class HrPublicHolidays(models.Model):
