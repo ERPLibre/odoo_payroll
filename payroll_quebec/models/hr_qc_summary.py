@@ -18,7 +18,7 @@
 #
 ##############################################################################
 
-from openerp import api, fields, models, _
+from odoo import api, fields, models, _
 
 
 @api.model
@@ -43,7 +43,7 @@ class HrQcSummary(models.AbstractModel):
             ('sent', 'Sent'),
         ],
         'Status',
-        select=True,
+        index=True,
         readonly=True,
         default='draft',
     )

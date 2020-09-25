@@ -25,10 +25,10 @@ import unicodedata
 from datetime import datetime
 from elaphe.datamatrix import DataMatrix
 
-from openerp import api, fields, models, _
-from openerp.tools import DEFAULT_SERVER_DATE_FORMAT
-import openerp.addons.decimal_precision as dp
-from openerp.exceptions import ValidationError
+from odoo import api, fields, models, _
+from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
+import odoo.addons.decimal_precision as dp
+from odoo.exceptions import ValidationError
 
 from .hr_qc_summary import get_type_codes
 
@@ -439,7 +439,7 @@ class HrReleve1(models.Model):
     )
     number = fields.Integer(
         'Sequential Number',
-        select=True,
+        index=True,
         readonly=True, states={'draft': [('readonly', False)]},
     )
     previous_number = fields.Integer(
