@@ -18,7 +18,7 @@
 #
 ##############################################################################
 
-from openerp import api, fields, models, _
+from odoo import api, fields, models, _
 
 
 class HrReleve1SummaryBox(models.Model):
