@@ -21,5 +21,5 @@
 #
 ##############################################################################
 
-import report_payslip
-import report_payslip_details
+from . import report_payslip
+from . import report_payslip_details
