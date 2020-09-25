@@ -20,8 +20,8 @@
 #
 ##############################################################################
 
-from openerp import fields, models, api, _
-from openerp.osv import osv
+from odoo import fields, models, api, _
+from odoo.osv import osv
 
 
 class HrPayrollPeriod(models.Model):

@@ -24,8 +24,8 @@ import time
 from datetime import datetime, date
 from dateutil.relativedelta import relativedelta
 
-from openerp import api, fields, models, tools, _
-from openerp.exceptions import ValidationError
+from odoo import api, fields, models, tools, _
+from odoo.exceptions import ValidationError
 
 to_string = fields.Date.to_string
 from_string = fields.Date.from_string
@@ -102,7 +102,7 @@ class HrPayslip(models.Model):
             ('done', 'Done'),
             ('cancel', 'Rejected'),
         ], 'Status',
-        select=True,
+        index=True,
         readonly=True,
         copy=False,
         default='draft',

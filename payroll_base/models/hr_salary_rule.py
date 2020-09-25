@@ -23,9 +23,9 @@
 import sys
 import traceback
 
-from openerp import fields, models, api, _
-from openerp.exceptions import ValidationError
-from openerp.tools.safe_eval import safe_eval
+from odoo import fields, models, api, _
+from odoo.exceptions import ValidationError
+from odoo.tools.safe_eval import safe_eval
 
 
 class HrSalaryRule(models.Model):
@@ -48,7 +48,7 @@ class HrSalaryRule(models.Model):
         'Sequence',
         required=True,
         help='Use to arrange calculation sequence',
-        select=True,
+        index=True,
         default=5,
     )
     category_id = fields.Many2one(
